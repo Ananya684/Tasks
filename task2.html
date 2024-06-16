@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: large;
+        }
+        .t1{
+            border: 1px solid black;
+            padding: 3px 2px 0 2px;
+        }
+        .t2{
+            border: 1px solid black;
+            padding: 3px 0 3px 2px;
+
+        }
+        td{
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        .tr2 td{
+            border-right: 2px solid blue;
+        }
+        td:hover{
+            background-color: #ed9c11;
+        }
+        tr{
+           background-color: cyan;
+           border-right: none; 
+        }
+        .tr2{
+            border-right: none;
+            background-color: gainsboro;
+        }
+        .tr2 td:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<div>
+    <h3>Vertical Navigation Bar</h3>
+    <table class="t1">
+        <tr><td>Home</td></tr>
+        <tr><td>Java</td></tr>
+        <tr><td>CSS</td></tr>
+        <tr><td>HTML</td></tr>
+        <tr><td>Bootstrap</td></tr>
+    </table>
+    <h3>Horizontal Navigation Bar</h3>
+    <table class="t2">
+        <tr class="tr2">
+            <td>Home</td>
+            <td>Java</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+</div>
+</html>

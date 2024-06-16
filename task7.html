@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(180, 21, 95); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color:white;
+  }
+  .form-container {
+    background-color: rgba(141, 43, 60, 0.918); 
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.25);
+  }
+ 
+  .register-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: white; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight:bold;
+    font-size:large;
+  }
+  input,select,textarea{
+    margin-bottom:10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <form>
+    <table>
+      <tr>
+    <td><label>Name:</label></td>
+    <td><input type="text" placeholder="your name"><br></td>
+    </tr>
+    <tr><td><label for="email">Email:</label></td>
+    <td><input type="email" id="email" name="email" placeholder="your email"></td>
+    </tr>
+    <tr>
+    <td><label for="password">Password:</label></td>
+    <td><input type="password" id="password" name="password"></td>
+    </tr>
+    <tr><td><label for="phone">Phone Number:</label></td>
+    <td><input type="phone number" id="phone" name="phone no"></td>
+    </tr>
+    <tr><td><label>Gender:</label></td>
+    <td><input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" >
+    <label for="other">Other</label></td>
+    </tr>
+    <tr><td><label for="language" >Language:</label></td>
+    <td><select id="language" name="language" >
+      <option value="lang" >Select language</option>
+      <option value="english" >English</option>
+      <option value="hindi">Hindi</option>
+      <option value="spanish">Spanish</option>
+    </select></td></tr>
+    <tr><td><label for="zip">Zip Code:</label></td>
+    <td><input type="text" id="zip" name="zip" ><br></td></tr>
+    <tr><td><label for="about">About:</label></td>
+    <td><textarea id="about" name="about"  placeholder="Write about yourself..."></textarea></td></tr>
+   </table>
+   <button type="submit" class="register-btn">Register</button></tr>
+  </form>
+</div>
+
+</body>
+</html>
